@@ -20,7 +20,7 @@ public class RegistrationController {
     @Autowired
     private EmailVerificationService emailVerificationService;
 
-    public RegistrationController(UserService userService, EmailService emailService,EmailVerificationService emailVerificationService ) {
+    public RegistrationController(UserService userService, EmailService emailService, EmailVerificationService emailVerificationService) {
         this.userService = userService;
         this.emailService = emailService;
         this.emailVerificationService = emailVerificationService;
@@ -41,8 +41,4 @@ public class RegistrationController {
     public Map<String, String> verifyOtp(@RequestParam String email, @RequestParam String otp) {
         return emailVerificationService.verifyOtp(email, otp);
     }
-<<<<<<< HEAD
-};
-=======
 }
->>>>>>> origin/master

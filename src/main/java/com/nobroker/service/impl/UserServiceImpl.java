@@ -39,16 +39,13 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
     }
 
-<<<<<<< HEAD
+
     @Override
     public boolean isEmailVerified(String email) {
         User user = userRepository.findByEmail(email);
         return user !=null && user.isEmailVerified() ;
     }
 
-
-=======
->>>>>>> origin/master
     User mapToEntity(UserDto userDto){
         User user = modelMapper.map(userDto, User.class);
         return user;
