@@ -15,9 +15,12 @@ public class EmailVerificationService {
     @Autowired
     private UserService userService;
 
+<<<<<<< HEAD
     @Autowired
     private EmailService emailService;
 
+=======
+>>>>>>> origin/master
     public Map<String, String> verifyOtp(String email, String otp) {
         String storedOtp = emailOtpMapping.get(email);
 
@@ -39,6 +42,7 @@ public class EmailVerificationService {
         }
         return response;
     }
+<<<<<<< HEAD
     public Map<String, String> sendOtpForLogin(String email) {
         if (userService.isEmailVerified(email)) {
             String otp = emailService.generateOtp();
@@ -74,4 +78,6 @@ public class EmailVerificationService {
 
         return response;
     }
+=======
+>>>>>>> origin/master
 }

@@ -13,5 +13,9 @@ public interface UserService {
 
    public void verifyEmail(User user);
 
+<<<<<<< HEAD
    public boolean isEmailVerified(String email);
+=======
+
+>>>>>>> origin/master
 }
